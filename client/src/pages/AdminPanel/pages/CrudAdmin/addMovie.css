@@ -1,0 +1,311 @@
+.addMovie-page {
+    padding: 24px 32px 40px;
+    min-height: 100%;
+    background: #050505;
+}
+
+.addMovie-top-side {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.addMovie-title {
+    color: #f5f7ff;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.2px;
+}
+
+.addMovie-layout {
+    display: grid;
+    grid-template-columns: minmax(520px, 620px) 360px;
+    gap: 32px;
+    align-items: start;
+}
+
+.addMovie-left,
+.addMovie-right {
+    width: 100%;
+}
+
+.addMovie-form {
+    margin-bottom: 24px;
+}
+
+.addMovie-form2 {
+    width: 100%;
+}
+
+.addMovie-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.addMovie-title-name,
+.addMovie-title-description {
+    color: #f1f5ff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.addMovie-input-bar,
+.addMovie-input-bar2,
+.addMovie-select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.04));
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    box-sizing: border-box;
+}
+
+.addMovie-input-bar:focus,
+.addMovie-input-bar2:focus,
+.addMovie-select:focus,
+.addMovie-input-description:focus {
+    border-color: rgba(255,255,255,0.3);
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.04);
+}
+
+.addMovie-input-bar::placeholder,
+.addMovie-input-bar2::placeholder,
+.addMovie-input-description::placeholder {
+    color: rgba(255,255,255,0.4);
+}
+
+.addMovie-select {
+    color: rgba(255,255,255,0.88);
+    cursor: pointer;
+}
+
+.addMovie-select option {
+    background: #0f0f0f;
+    color: #fff;
+    font-size: 14px;
+}
+
+.addMovie-text-area {
+    position: relative;
+}
+
+.addMovie-input-description {
+    width: 100%;
+    min-height: 190px;
+    padding: 14px 14px 34px;
+    background: linear-gradient(180deg, #171717, #0f0f0f);
+    color: #fff;
+    border: 1px solid #2a2a2a;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.char-counter {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    pointer-events: none;
+}
+
+.addMovie-poster-card {
+    padding: 18px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.28);
+}
+
+.poster-dropzone {
+    width: 100%;
+    min-height: 520px;
+    border-radius: 20px;
+    border: 1.5px dashed rgba(255,255,255,0.14);
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015)),
+        #0b0b0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.poster-dropzone:hover {
+    border-color: rgba(255,255,255,0.28);
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.03);
+}
+
+.poster-dropzone.dragging {
+    border-color: #e50914;
+    box-shadow: 0 0 0 5px rgba(229,9,20,0.12);
+    transform: scale(1.01);
+}
+
+.poster-dropzone-empty {
+    text-align: center;
+    padding: 24px;
+}
+
+.poster-dropzone-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    color: #fff;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.poster-dropzone-title {
+    margin: 0 0 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.poster-dropzone-subtitle {
+    margin: 0;
+    color: rgba(255,255,255,0.48);
+    font-size: 13px;
+}
+
+.poster-preview-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.poster-preview-image {
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    object-fit: cover;
+    display: block;
+}
+
+.poster-preview-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.5));
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 24px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.poster-preview-overlay span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.14);
+}
+
+.poster-preview-wrap:hover .poster-preview-overlay {
+    opacity: 1;
+}
+
+.poster-file-name {
+    margin-top: 12px;
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+    word-break: break-word;
+}
+
+.addMovie-file-upload {
+    width: 100%;
+    min-height: 54px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.025));
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    box-sizing: border-box;
+}
+
+.addMovie-file-upload:hover {
+    border-color: rgba(255,255,255,0.24);
+}
+
+.addMovie-file-upload-text {
+    color: rgba(255,255,255,0.72);
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.addMovie-submit-btn {
+    min-width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #d90f1a, #8a0f15);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.18s ease, opacity 0.18s ease, box-shadow 0.18s ease;
+    box-shadow: 0 12px 24px rgba(217,15,26,0.18);
+}
+
+.addMovie-submit-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 28px rgba(217,15,26,0.24);
+}
+
+.addMovie-submit-btn:disabled,
+.addMovie-submit-btn.loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.form-messages {
+    margin-top: 16px;
+    min-height: 24px;
+}
+
+.form-error,
+.form-success {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-error {
+    color: #ff8e8e;
+}
+
+.form-success {
+    color: #8ef0b5;
+}
+

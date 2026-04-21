@@ -1,0 +1,43 @@
+.moviePage {
+  min-height: 100vh;
+  background: #050505;
+  color: white;
+  padding: 40px;
+}
+
+.moviePage-back {
+  margin-bottom: 24px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #e50914;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.moviePage-card {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.moviePage-poster {
+  width: 320px;
+  border-radius: 16px;
+}
+
+.moviePage-info h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.moviePage-meta {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.moviePage-description {
+  max-width: 600px;
+  line-height: 1.6;
+}

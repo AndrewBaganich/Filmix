@@ -35,6 +35,9 @@ Built with **React (Vite) + Express + Prisma + MySQL**
 
 ## Screenshots
 
+### Welcome
+![Welcome](./screenshots/Wlcome.png)
+
 ### Home
 ![Home](./screenshots/home.png)
 

@@ -9,7 +9,7 @@ server/.env
 
 
 server/uploads
-
+server/src/generated
 
 dist
 client/dist

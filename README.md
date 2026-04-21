@@ -33,32 +33,32 @@ Built with **React (Vite) + Express + Prisma + MySQL**
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### 🏠 Home
+### Home
 ![Home](./screenshots/home.png)
 
-### 🎬 Movies
+### Movies
 ![Movies](./screenshots/movies.png)
 
-### 🔝 Top Movies
+### Top Movies
 ![Top](./screenshots/top10.png)
 
-### ⚙️ Admin Panel
+### Admin Panel
 ![Admin](./screenshots/AdminPanel.png)
 
-### ➕ Add Movie
+### Add Movie
 ![Add](./screenshots/AddMovie.png)
 
-### ✏️ Update Movie
+### Update Movie
 ![Update](./screenshots/UpdateMovie.png)
 
-### 📂 Dropdown
+### Dropdown
 ![Dropdown](./screenshots/DropDown.png)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 filmix/
 │
@@ -68,6 +68,8 @@ filmix/
 │   ├── prisma/    
 │
 └── screenshots/   
+
+DB_IMITATE.js - for home page, but you can fatch films from server
 
 ---
 

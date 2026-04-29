@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import "./dropdown.css"
+import "./dropDown.css"
 
 
 export default function DropDownSettings (props){

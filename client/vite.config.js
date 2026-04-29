@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from "path"
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
@@ -12,7 +14,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      '/api': 'http://localhost:3500'
+      '/api': `${API_URL}`
     }
   }
 })

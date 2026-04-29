@@ -5,7 +5,10 @@ import { requestTime, logger } from "./middlewares/middleware.js";
 import cors from "cors";
 
 const app = express();
-const allowedOrigin = ["http://localhost:5173"];
+const allowedOrigin = [
+  "http://localhost:5173",
+  "https://filmix-phi.vercel.app"
+];
 
 app.use(express.json());
 app.use(express.static("public(OLD)"));

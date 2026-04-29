@@ -1,6 +1,5 @@
 export const PORT = process.env.PORT || 3500;
 
-export const DATABASE_URL= process.env.DATABASE_URL
 export const MAX_SIZE_POSTER = 15 * 1024 * 1024
 
 export const ALLOWED_POSTER_TYPES = ["image/jpeg", "image/jpg", "image/png"]
